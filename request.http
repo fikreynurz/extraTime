@@ -1,0 +1,59 @@
+POST http://localhost:3000/lembur/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2ODk1NTcsImV4cCI6MTYzMTY5MzE1N30.dRUVTUoC75TQtgGDyb2t-Xbt-ZiB9N1M49bCgdyVj6c
+content-type: application/json
+
+{
+    "fullName": "Eriawan",
+    "assigner": "Dodi Maryanto",
+    "reasons": "Programming",
+    "time": "2021-09-15",
+    "startTime": "2021-09-15T17:00:00.000Z",
+    "endTime": "2021-09-15T20:00:00.000Z"
+}
+
+###
+
+GET http://localhost:3000/lembur/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2ODI1NzMsImV4cCI6MTYzMTY4NjE3M30.CpH-Ot1DvHMeJy1WqC19qQ3Ckugkpu_OdKyb5K40EXc
+Content-Type: application/json
+
+###
+
+PATCH  http://localhost:3000/lembur/61417aa7383384acdf2103fb
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2ODI1NzMsImV4cCI6MTYzMTY4NjE3M30.CpH-Ot1DvHMeJy1WqC19qQ3Ckugkpu_OdKyb5K40EXc
+Content-Type: application/json
+
+ [{"propName":"reasons", "value":"Testing App"}]
+
+
+###
+
+DELETE  http://localhost:3000/lembur/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2ODA5NjEsImV4cCI6MTYzMTY4NDU2MX0.sE5dErShxwByWWdhWrFveucqYziouc-7A3eJqAuwajw
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/user/signin
+Content-Type: application/json
+
+{
+    "email": "manager@gmail.com",
+    "password": "manager"
+}
+
+###
+
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email": "manager@gmail.com",
+    "password": "manager"
+}
+
+###
+
+GET http://localhost:3000/user/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE1MjY3MDAsImV4cCI6MTYzMTUzMDMwMH0.1_-moW7HubnIyIhJD7MJEp7bmT4zOZOpacLIXD4hzGU
+Content-Type: application/json
